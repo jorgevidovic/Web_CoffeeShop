@@ -2,6 +2,7 @@
     --headingFont: 'PT Sans', sans-serif;
     --paragraphFont: 'Open Sans', sans-serif;
     --mainColor: #784D3C;
+    --borderColor: #e1e1e1;
 }
 
 html{
@@ -53,6 +54,7 @@ html{
 
 .logo__blog{
     font-weight: 300;
+    line-height: 1.2;
 }
 @media (min-width: 768px) {
     .nav{
@@ -68,10 +70,83 @@ html{
     color: white;
 }
 
+/** Content **/
+
 body{
     font-family: var(--paragraphFont);
     font-size: 1.6rem;
     line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .main-content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entry{
+    border-bottom: 0.5rem solid var(--borderColor);
+    margin-bottom: 2rem;
+}
+
+.entry:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+ /** Barra Lateral **/
+.courses{
+    list-style: none;
+}
+
+.widget--course{
+    border-bottom: 1px solid var(--borderColor);
+    margin-bottom: 2rem;
+}
+
+.widget--courseL:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.widget--course__label{
+    font-family: var(--headingFont);
+    font-weight: 700;
+}
+
+.widget--course__info{
+    font-weight: 400;
+}
+
+.widget--course__info
+.widget--course__label{
+    font-size: 2rem;
+}
+/** Button **/
+.button{
+    display: block;
+    font-family: var(--headingFont);
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+    .button{
+        display: inline-block;
+    }
+}
+
+.button--main{
+    background-color: black;
+}
+
+.button--secundary{
+    background-color: var(--mainColor);
 }
 
 /** Globals **/
@@ -87,6 +162,7 @@ a {
 
 h1,h2,h3,h4{
     font-family: var(--headingFont);
+    line-height: 1.2;
 }
 
 h1{
