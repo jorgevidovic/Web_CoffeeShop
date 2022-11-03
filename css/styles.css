@@ -149,6 +149,15 @@ body{
     background-color: var(--mainColor);
 }
 
+/** Footer **/
+.footer{
+    background-color: black;
+    padding-top: 3rem 0;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+
+}
+
 /** Globals **/
 .container{
     max-width: 120rem;
@@ -196,4 +205,15 @@ img{
 
 .text-center{
     text-align: center;
+}
+
+
+/** -- About Us -- **/
+
+@media (min-width: 768px) {
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+    }
 }
