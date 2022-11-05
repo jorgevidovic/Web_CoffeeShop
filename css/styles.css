@@ -105,11 +105,12 @@ body{
     margin-bottom: 2rem;
 }
 
-.widget--courseL:last-of-type{
+.widget--course:last-of-type{
     border-bottom: none;
     margin-bottom: 0;
 }
-.widget--course__label{
+.widget--course__label,
+.course__label{
     font-family: var(--headingFont);
     font-weight: 700;
 }
