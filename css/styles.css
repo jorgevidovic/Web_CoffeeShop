@@ -134,11 +134,16 @@ body{
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     font-weight: bolder;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .button{
         display: inline-block;
+    }
+
+    .button:hover{
+        cursor: pointer;
     }
 }
 
@@ -236,4 +241,39 @@ img{
 
 .course:last-of-type{
     border-bottom: none;
+}
+
+/** -- Contact -- **/
+.contact-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form{
+    background-color: white;
+    margin: -5rem auto 0;
+    width: 95%;
+    padding: 5rem;
+}
+
+.camp{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.camp__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.camp__field{
+    flex: 1;
+    border: 1px solid rgb(196, 194, 194);
+}
+
+.camp__field--textarea{
+
 }
