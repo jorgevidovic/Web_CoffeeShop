@@ -244,6 +244,22 @@ img{
 }
 
 /** -- Contact -- **/
+.confirmation{
+    background-color: rgb(119, 198, 0);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.error{
+    background-color: rgb(186, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
 .contact-bg{
     background-image: url(../img/contacto.jpg);
     height: 40rem;
